@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		EC22D367294A7786001A1385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22D366294A7786001A1385 /* AppDelegate.swift */; };
 		EC22D369294A7786001A1385 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22D368294A7786001A1385 /* SceneDelegate.swift */; };
-		EC22D36B294A7786001A1385 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22D36A294A7786001A1385 /* ViewController.swift */; };
+		EC22D36B294A7786001A1385 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22D36A294A7786001A1385 /* ScannerViewController.swift */; };
 		EC22D36E294A7786001A1385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC22D36C294A7786001A1385 /* Main.storyboard */; };
 		EC22D370294A7788001A1385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC22D36F294A7788001A1385 /* Assets.xcassets */; };
 		EC22D373294A7788001A1385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC22D371294A7788001A1385 /* LaunchScreen.storyboard */; };
+		EC22D380294B6071001A1385 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22D37F294B6071001A1385 /* ShowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EC22D363294A7786001A1385 /* Practica-QR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Practica-QR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC22D366294A7786001A1385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC22D368294A7786001A1385 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC22D36A294A7786001A1385 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC22D36A294A7786001A1385 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		EC22D36D294A7786001A1385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC22D36F294A7788001A1385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC22D372294A7788001A1385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC22D374294A7788001A1385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC22D37F294B6071001A1385 /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				EC22D366294A7786001A1385 /* AppDelegate.swift */,
 				EC22D368294A7786001A1385 /* SceneDelegate.swift */,
-				EC22D36A294A7786001A1385 /* ViewController.swift */,
+				EC22D36A294A7786001A1385 /* ScannerViewController.swift */,
 				EC22D36C294A7786001A1385 /* Main.storyboard */,
 				EC22D36F294A7788001A1385 /* Assets.xcassets */,
 				EC22D371294A7788001A1385 /* LaunchScreen.storyboard */,
 				EC22D374294A7788001A1385 /* Info.plist */,
+				EC22D37F294B6071001A1385 /* ShowViewController.swift */,
 			);
 			path = "Practica-QR";
 			sourceTree = "<group>";
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC22D36B294A7786001A1385 /* ViewController.swift in Sources */,
+				EC22D36B294A7786001A1385 /* ScannerViewController.swift in Sources */,
 				EC22D367294A7786001A1385 /* AppDelegate.swift in Sources */,
 				EC22D369294A7786001A1385 /* SceneDelegate.swift in Sources */,
+				EC22D380294B6071001A1385 /* ShowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,13 +291,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6PTSGN23VN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Practica-QR/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used to scan barcodes";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,7 +308,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,13 +319,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6PTSGN23VN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Practica-QR/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used to scan barcodes";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,7 +336,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
